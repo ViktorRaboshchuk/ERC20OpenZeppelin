@@ -13,7 +13,6 @@ contract Vaska is ERC20 {
     }
 
     function mint(address to, uint256 amount) public {
-      require(to != address(0), "ERC20: mint address equal to zero");
       _mint(to, amount);
     }
 
